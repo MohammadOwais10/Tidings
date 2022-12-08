@@ -1,0 +1,86 @@
+.header {
+  position: fixed;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 56px;
+  width: 100%;
+  padding: 5px 0;
+  z-index: 4;
+}
+
+.header .onavbar {
+  display: flex;
+  list-style-type: none;
+  z-index: 4;
+}
+
+.header li {
+  font-size: 1.5rem;
+  margin-right: 2vmax;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.specialList {
+  border-radius: 5px;
+  right: 0;
+  position: absolute;
+  padding: 0px 5px;
+  border: 1px solid white;
+}
+
+.specialList i {
+  padding: 4px;
+  font-size: 25px;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+}
+
+.header li a:hover {
+  color: rgb(183, 9, 199);
+  cursor: pointer;
+}
+
+.header .barIcon {
+  position: absolute;
+  top: -45px;
+  left: 10px;
+  width: 40px;
+  font-size: 25px;
+  background: none;
+  color: whitesmoke;
+  display: none;
+  border-color: unset;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 0;
+  }
+
+  .header .onavbar {
+    display: none;
+  }
+
+  .header .barIcon {
+    display: block;
+    z-index: 6;
+  }
+
+  .header .navbar {
+    display: block;
+    list-style-type: none;
+    left: 0;
+    z-index: 16;
+    padding: 10px 30px;
+  }
+
+  .header .navbar li {
+    margin-bottom: 30px;
+  }
+}

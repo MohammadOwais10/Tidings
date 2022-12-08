@@ -1,0 +1,151 @@
+.postContainer {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  border-left: 3px solid rgba(0, 0, 0, 0.158);
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  padding-top: 60px;
+}
+
+.postContainer h1 {
+  color: black;
+  font: 500 2rem "Roboto";
+  text-align: center;
+}
+
+.createPostForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 2vmax 5vmax;
+  justify-content: space-evenly;
+  height: 80%;
+  width: 50vh;
+  background-color: whitesmoke;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.267);
+  border-radius: 5px;
+}
+
+.createPostForm > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.createPostForm > div > input,
+.createPostForm > div > select,
+.createPostForm > div > textarea {
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #e100ff;
+  border-radius: 4px;
+  font-size: 1.3vmax;
+  font-weight: 600;
+  outline: none;
+  margin: 10px 0;
+}
+
+.createPostForm > div > i {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6vmax;
+  color: #e100ff;
+  font-size: 1.8vmax;
+}
+
+#createPostFormFile > input {
+  display: flex;
+  padding: 0%;
+}
+
+#createPostFormFile > input::file-selector-button {
+  cursor: pointer;
+  width: 100%;
+  z-index: 2;
+  height: 5vh;
+  border: none;
+  margin: 0%;
+  font: 500 1.5vmax "Roboto";
+  transition: all 0.5s;
+  padding: 0 1vmax;
+  color: grey;
+  background-color: white;
+}
+
+#createPostFormFile > input::file-selector-button:hover {
+  background-color: #ac6aee;
+}
+
+#createPostFormImage {
+  width: 100%;
+  overflow: auto;
+}
+
+#createPostFormImage > img {
+  width: 3vmax;
+  height: 3vmax;
+  margin: 0 0.5vmax;
+}
+
+#createPostBtn {
+  border: none;
+  background: linear-gradient(to right, #7f00ff, #e100ff);
+  color: white;
+  font-size: 1.6vmax;
+  font-weight: 600;
+  width: 100%;
+  padding: 0.9vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+  margin: 10px 0;
+}
+
+#createPostBtn:hover {
+  background: lightgray;
+}
+
+@media screen and (max-width: 850px) {
+  .postContainer {
+    padding: 1vmax;
+  }
+
+  .createPostForm {
+    padding: 2vmax 5vmax;
+    width: fit-content;
+  }
+
+  .createPostForm > div > input,
+  .createPostForm > div > select,
+  .createPostForm > div > textarea {
+    padding: 2vmax 4vmax;
+    font: 400 1.8vmax "Roboto";
+  }
+
+  .createPostForm > div > svg {
+    font-size: 2.2vmax;
+  }
+
+  #createPostFormFile > img {
+    width: 8vmax;
+    border-radius: 100%;
+  }
+
+  #createPostFormFile > input::file-selector-button {
+    height: 7vh;
+    font: 400 1.8vmax "Roboto";
+  }
+
+  #createPostBtn {
+    font: 500 2.2vmax "Roboto";
+    padding: 1.8vmax;
+  }
+}

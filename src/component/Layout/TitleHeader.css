@@ -1,0 +1,28 @@
+.titleHeader {
+  width: 100%;
+  position: fixed;
+  background: linear-gradient(to right, #7f00ff, #e100ff);
+  text-align: center;
+  z-index: 5;
+}
+
+.logo {
+  display: flex;
+  padding: 3px;
+  justify-content: center;
+  height: 50px;
+}
+
+.logo img {
+  background: black;
+  border-radius: 5px 0 0 5px;
+}
+
+.logo h1 {
+  color: white;
+  background: black;
+  padding: 0 10px;
+  border-radius: 0 5px 5px 0;
+  display: flex;
+  align-items: center;
+}
