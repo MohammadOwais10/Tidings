@@ -60,3 +60,9 @@
   font-size: 13px;
   color: #868585;
 }
+
+@media screen and (max-width: 550px) {
+  .popularNews {
+    padding: 0px 5px 10px 5px;
+  }
+}

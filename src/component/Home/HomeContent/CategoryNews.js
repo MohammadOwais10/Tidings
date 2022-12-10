@@ -12,7 +12,7 @@ const CategoryNews = () => {
   useEffect(() => {
     const getArticles = async () => {
       const response = await axios.get(
-        "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=39c3025e706146f99c1db7b6e2295f6e"
+        "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=f8fd073b67244e2282d28191b573968a"
       );
       setCat(response.data.articles);
       console.log(response);
@@ -55,15 +55,13 @@ const CategoryNews = () => {
                       <div className="img">
                         <img src={val.urlToImage} alt="" />
                       </div>
-                      <div class=" categoryTop">
+                      <div className=" categoryTop">
                         <span>{val.source.name}</span>
                       </div>
                     </div>
                     <div className="categoryDetails categoryRow">
                       <a href={val.url}>
-                        <h1 className="titleName">
-                          {val.title.slice(0, 50)}...
-                        </h1>
+                        <h1 className="titleName">{val.title.slice(0, 50)}</h1>
                       </a>
                       <div className="categoryDate">
                         <i class="fas fa-calendar-alt"></i>

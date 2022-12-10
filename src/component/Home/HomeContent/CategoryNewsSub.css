@@ -6,6 +6,7 @@
 
 .subNews .subbox {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: space-between;
   margin: 10px;
@@ -22,7 +23,8 @@
 }
 
 .subNews .subImages img {
-  width: 320px;
+  width: 25vmax;
+  max-width: 300px;
   height: 300px;
   object-fit: cover;
 }
@@ -33,7 +35,7 @@
 }
 
 .subNews h1 {
-  font-size: 22px;
+  font-size: 2vmax;
   color: black;
 }
 
@@ -72,17 +74,45 @@
 }
 
 .desc {
-  font-size: 13px;
+  font-size: 1.2vmax;
   margin: 10px 0;
 }
 
 @media screen and (max-width: 768px) {
-  .subNews img,
-  .subNews .subImages,
-  .subNews .subbox {
-    height: 350px;
+  .subNews .subImages img {
+    width: 30vmax;
   }
   .subNews {
     padding: 0 5px 0px 5px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .subNews .subbox {
+    height: auto;
+    flex-direction: column;
+  }
+  .subNews .subImages {
+    width: 100%;
+  }
+  .subNews .subImages img {
+    width: 100%;
+    max-width: none;
+  }
+
+  .subNews h1 {
+    font-size: 22px;
+  }
+  .desc {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .subNews h1 {
+    font-size: 30px;
+  }
+  .desc {
+    font-size: 18px;
   }
 }

@@ -19,19 +19,19 @@ const Header = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/business">Business</Link>
+              <Link>Business</Link>
             </li>
             <li>
-              <Link to="/technology">Technology</Link>
+              <Link>Technology</Link>
             </li>
             <li>
-              <Link to="/sports">Sports</Link>
+              <Link>Sports</Link>
             </li>
             <li>
-              <Link to="/health">Health</Link>
+              <Link>Health</Link>
             </li>
             <li>
-              <Link to="/science">Science</Link>
+              <Link>Science</Link>
             </li>
             <li className="specialList">
               <Link to="/post">

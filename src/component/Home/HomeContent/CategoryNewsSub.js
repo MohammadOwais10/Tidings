@@ -9,7 +9,7 @@ const CategoryNewsSub = () => {
   useEffect(() => {
     const getArticles = async () => {
       const response = await axios.get(
-        "https://newsapi.org/v2/everything?q=business&from=2022-12-06&to=2022-12-06&sortBy=popularity&apiKey=39c3025e706146f99c1db7b6e2295f6e"
+        "https://newsapi.org/v2/everything?q=business&from=2022-12-06&to=2022-12-06&sortBy=popularity&apiKey=f8fd073b67244e2282d28191b573968a"
       );
       setSub(response.data.articles);
       console.log(response);
@@ -41,16 +41,16 @@ const CategoryNewsSub = () => {
                       <div className="img">
                         <img src={val.urlToImage} alt="" />
                       </div>
-                      <div class=" category1">
+                      <div className=" category1">
                         <span>{val.source.name}</span>
                       </div>
                     </div>
                     <div className="subDetail">
                       <a href={val.url}>
-                        <h1 className="title">{val.title.slice(0, 40)}...</h1>
+                        <h1 className="title">{val.title.slice(0, 40)}</h1>
                       </a>
                       <div className="subDate">
-                        <i class="fas fa-calendar-days"></i>
+                        <i class="fas fa-calendar-alt"></i>
                         <label>{val.publishedAt}</label>
                       </div>
                       <p className="desc">
@@ -60,7 +60,7 @@ const CategoryNewsSub = () => {
                         </a>
                       </p>
                       <div className="subAuthor">
-                        <i class="fas fa-user-edit"></i>
+                        <i class="fas fa-user-tie"></i>
                         <label>{val.author}</label>
                       </div>
                     </div>

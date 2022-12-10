@@ -8,7 +8,7 @@ const Sidetrend = () => {
   useEffect(() => {
     const getArticles = async () => {
       const response = await axios.get(
-        "https://newsapi.org/v2/top-headlines?country=in&apiKey=39c3025e706146f99c1db7b6e2295f6e"
+        "https://newsapi.org/v2/top-headlines?country=in&apiKey=f8fd073b67244e2282d28191b573968a"
       );
       setTrend(response.data.articles);
       console.log(response);
