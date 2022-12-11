@@ -9,7 +9,7 @@ const MainNews = () => {
   useEffect(() => {
     const getArticles = async () => {
       const response = await axios.get(
-        "https://newsapi.org/v2/everything?q=apple&from=2022-12-08&to=2022-12-08&sortBy=popularity&apiKey=f8fd073b67244e2282d28191b573968a"
+        `https://newsapi.org/v2/everything?q=apple&from=2022-12-08&to=2022-12-08&sortBy=popularity&apiKey=${process.env.REACT_APP_NEWS_API_KEYS}`
       );
       setHome(response.data.articles);
       console.log(response);

@@ -9,7 +9,7 @@ const CategoryNewsSub = () => {
   useEffect(() => {
     const getArticles = async () => {
       const response = await axios.get(
-        "https://newsapi.org/v2/everything?q=business&from=2022-12-06&to=2022-12-06&sortBy=popularity&apiKey=f8fd073b67244e2282d28191b573968a"
+        `https://newsapi.org/v2/everything?q=business&from=2022-12-06&to=2022-12-06&sortBy=popularity&apiKey=${process.env.REACT_APP_NEWS_API_KEYS}`
       );
       setSub(response.data.articles);
       console.log(response);
